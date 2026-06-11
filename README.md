@@ -1,57 +1,144 @@
-# Hey, I'm Tanishq 👋
+# 🔐 Authentication System using Django Backend
 
-**Data Engineer** · Faridabad, India · Open to remote roles worldwide
+A secure and scalable user authentication system built with Django. This project demonstrates user registration, login, logout, session management, and authentication using Django's built-in authentication framework.
 
-🎓 B.Tech. Computer Engineering &nbsp;|&nbsp; 📊 PG Diploma in Big Data Analytics &nbsp;|&nbsp; ✅ Open to remote
+## 🚀 Features
 
----
+- User Registration (Sign Up)
+- User Login
+- User Logout
+- Password Hashing & Security
+- Session-Based Authentication
+- Form Validation
+- Protected Routes
+- Django Authentication Framework
+- SQLite Database Support
 
-## About
+## 🛠️ Tech Stack
 
-I'm a data engineer who likes turning messy, distributed data into clean, reliable pipelines. I've worked across the full DE stack — from writing PySpark jobs on Databricks to transforming data with dbt and visualising results in Power BI. My background is in Computer Engineering, backed by a PG diploma in Big Data Analytics, so I'm comfortable going deep on both the infrastructure and the analytics layer.
+- Python
+- Django
+- SQLite
+- HTML
+- CSS
+- Bootstrap (if used)
 
-I care about code that's readable, pipelines that don't break silently, and documentation that actually explains things.
+## 📂 Project Structure
 
----
+```bash
+Authentication-System-using-Django-Backend/
+│
+├── authentication/        # Authentication app
+├── templates/             # HTML templates
+├── static/                # CSS, JS, Images
+├── manage.py
+├── db.sqlite3
+├── requirements.txt
+└── README.md
+```
 
-## Projects
+## ⚙️ Installation
 
-### 🗄️ PySpark × dbt End-to-End Data Engineering Pipeline
-A production-style data pipeline built entirely on Databricks. Raw data is ingested, processed with PySpark, transformed and tested with dbt, and served to downstream consumers. Covers medallion architecture (bronze → silver → gold), incremental models, and data quality checks.
+### 1. Clone the Repository
 
-`PySpark` `dbt` `Databricks` `SQL` 
+```bash
+git clone https://github.com/tanishq826/Authentication-System-using-Django-Backend-.git
+cd Authentication-System-using-Django-Backend-
+```
 
----
+### 2. Create Virtual Environment
 
-### 🤟 Sign Language Recognition System
-A computer vision model that classifies sign language gestures in real time. Built with Python, trained on annotated hand gesture data, with a lightweight interface for live webcam inference. Designed to make communication more accessible.
+```bash
+python -m venv venv
+```
 
-`Python` `OpenCV` `TensorFlow/Keras` `NumPy`
+Activate it:
 
----
+**Windows**
+```bash
+venv\Scripts\activate
+```
 
-## Stack
+**Linux/Mac**
+```bash
+source venv/bin/activate
+```
 
-| Area | Tools |
-|---|---|
-| Languages | Python · SQL |
-| Data Engineering | PySpark · dbt · Hadoop |
-| Platforms | Databricks · AWS S3 · PostgreSQL |
-| Analytics & Viz | Power BI · Tableau · Pandas |
-| Other | Django · Git |
+### 3. Install Dependencies
 
----
+```bash
+pip install -r requirements.txt
+```
 
-## Currently
+### 4. Run Migrations
 
-🟢 Deepening my Databricks + dbt skills — working on a more complex multi-source pipeline with real-world schemas. Also brushing up on distributed systems fundamentals and exploring Kafka for streaming data.
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
 
-Actively looking for **remote data engineering roles** where I can build robust pipelines from day one.
+### 5. Start Development Server
 
----
+```bash
+python manage.py runserver
+```
 
-## Let's connect
+Open:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanishq-saini-b0bb17381)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/tanishqsaini_111/)
-[![DataLemur](https://img.shields.io/badge/DataLemur-1A1A2E?style=flat&logoColor=white)](https://datalemur.com/profile)
+```text
+http://127.0.0.1:8000/
+```
+
+## 🔒 Authentication Workflow
+
+1. User registers with username and password.
+2. Password is securely hashed before storage.
+3. User logs in using valid credentials.
+4. Django creates a session for authenticated users.
+5. Protected pages are accessible only after login.
+6. User can logout to terminate the session.
+
+Django's built-in authentication system handles user verification and session management securely. :contentReference[oaicite:0]{index=0}
+
+## 🎯 Learning Outcomes
+
+Through this project, I learned:
+
+- Django Authentication System
+- User Session Management
+- Form Handling
+- URL Routing
+- Django Models
+- Template Rendering
+- Security Best Practices
+
+## 🔮 Future Improvements
+
+- Password Reset via Email
+- Email Verification
+- JWT Authentication
+- OAuth Login (Google/GitHub)
+- User Profile Management
+- Docker Deployment
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+## 👨‍💻 Author
+
+**Tanishq Saini**
+
+- GitHub: https://github.com/tanishq826
+- LinkedIn: (Add your LinkedIn profile)
+
+⭐ If you found this project helpful, consider giving it a star!
