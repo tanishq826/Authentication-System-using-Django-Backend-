@@ -89,6 +89,14 @@ Open:
 http://127.0.0.1:8000/
 ```
 
+## 📸 Screenshots
+
+### Login Page
+<dev>
+<img width="1919" height="976" alt="Screenshot 2026-06-11 182509" src="https://github.com/user-attachments/assets/e05b18fa-5d1f-4420-a042-5c66b5bee8d0" />
+  
+</dev>
+
 ## 🔒 Authentication Workflow
 
 1. User registers with username and password.
