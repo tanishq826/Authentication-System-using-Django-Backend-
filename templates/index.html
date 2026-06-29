@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged In user</title>
+  </head>
+  <body>
+    <style>
+
+      .grow{
+          animation: grow 4s infinite alternate;
+          
+      }
+    
+      @keyframes grow{
+          0%{
+              transform: scale(1);
+    
+          }
+          100%{
+              transform: scale(1.1);
+              
+          }
+      }
+    
+    
+    
+      .fadein{
+          opacity: 0;
+          animation: fadein 1s forwards;
+      }
+    
+      @keyframes fadein{
+          to{
+              opacity:1;
+    
+          }
+      }
+    </style>
+    <div class="fadein">
+    welcome{{request.user}}
+    <p>This is the best website on the planet and you are very lucky to access it</p>
+    <a href="/logout">Logout<a>
+    </div>
+  </body>
+</html>
